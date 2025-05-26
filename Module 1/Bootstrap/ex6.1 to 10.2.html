@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <title>Bootstrap implementation(ex6.1-ex10.2)</title> 
+         <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="icons/bootstrap-icons.css" rel="stylesheet">
+         <style> .card { margin-bottom: 2rem; }
+          </style> 
+          </head> 
+          <body class="p-4"> 
+            <div class="container">
+                <h2>7. Responsive Flexbox Utilities</h2>
+
+<h4>Exercise 7.1: Flex Navbar</h4>
+<div class="d-flex flex-column flex-md-row bg-light p-3 mb-4">
+  <a href="#" class="me-md-auto mb-2 mb-md-0">Logo</a>
+  <a href="#" class="me-md-3">Home</a>
+  <a href="#" class="me-md-3">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<h4>Exercise 7.2: Card Layout with Flexbox</h4>
+<div class="card p-3 d-flex justify-content-between align-items-center flex-md-row">
+  <div>
+    <h5 class="mb-0">Flexbox Card Title</h5>
+    <p class="mb-0 text-muted">Card subtitle</p>
+  </div>
+  <button class="btn btn-primary mt-3 mt-md-0">Action</button>
+</div>
+
+<h2>7. Typography</h2>
+
+<h4>Exercise 7.1: Typography Utilities</h4>
+<h1 class="display-1">Display 1 Heading</h1>
+<p class="lead">This is a lead paragraph with emphasis.</p>
+<p class="text-muted">This text is muted for subtlety.</p>
+<p class="fw-bold">This text is bold using fw-bold.</p>
+
+<h4>Exercise 7.2: Text Transformations</h4>
+<p class="text-uppercase">uppercase text</p>
+<p class="text-lowercase">LOWERCASE TEXT</p>
+<p class="text-capitalize">this is capitalized text</p>
+
+<h2>8. Forms</h2>
+
+<h4>Exercise 8.1: Registration Form</h4>
+<form class="mb-4">
+  <div class="mb-3">
+    <label for="regName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="regName">
+  </div>
+  <div class="mb-3">
+    <label for="regEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="regEmail">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="terms">
+    <label class="form-check-label" for="terms">Agree to terms</label>
+  </div>
+  <button class="btn btn-success">Register</button>
+</form>
+
+<h4>Exercise 8.2: Login Form (Floating)</h4>
+<form class="mb-4">
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+    <label for="loginEmail">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="loginPass" placeholder="Password">
+    <label for="loginPass">Password</label>
+  </div>
+  <button class="btn btn-primary">Login</button>
+</form>
+
+<h2>9. Buttons</h2>
+
+<h4>Exercise 9.1: Contextual Buttons</h4>
+<div class="mb-3">
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-light">Light</button>
+  <button class="btn btn-dark">Dark</button>
+  <button class="btn btn-outline-primary">Outline Primary</button>
+</div>
+
+<h4>Exercise 9.2: Button Groups and Toggle</h4>
+<div class="btn-group mb-3" role="group">
+  <button type="button" class="btn btn-outline-secondary">Left</button>
+  <button type="button" class="btn btn-outline-secondary">Middle</button>
+  <button type="button" class="btn btn-outline-secondary">Right</button>
+</div>
+
+<div class="btn-group" role="group" aria-label="Toggle buttons">
+  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck1">Toggle 1</label>
+
+  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck2">Toggle 2</label>
+</div>
+
+<h2 class="mt-5">10. Navbars and Navigation</h2>
+
+<h4>Exercise 10.1: Responsive Navbar</h4>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<h4>Exercise 10.2: Tabbed Navigation</h4>
+<ul class="nav nav-tabs mb-3">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Tab 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Tab 2</a>
+  </li>
+</ul>
+
+<ul class="nav nav-pills mb-3">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Pill 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Pill 2</a>
+  </li>
+</ul>
+</div> 
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>

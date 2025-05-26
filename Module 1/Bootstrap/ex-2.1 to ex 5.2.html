@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap implementation (ex2.1-ex5.2)</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="icons/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .box {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+
+    <!-- Exercise 3.1:  Create a container with three columns that stack vertically on mobile, two-per-row on tablets,  and three-per-row on desktops.  Exercise 3.2:  Use .container, .row, and .col-* classes appropriately for responsive design -->
+    <h3>Responsive Grid Layout</h3>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="box">Column 1</div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="box">Column 2</div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="box">Column 3</div>
+      </div>
+    </div>
+
+    <!-- Exercise 4.1:Design a two-column layout with a sidebar (col-md-3) and content area (col-md-9).  -->
+    <h3 class="mt-5">Two Column Layout (Sidebar + Content)</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box">Sidebar</div>
+      </div>
+      <div class="col-md-9">
+        <div class="box">Main Content</div>
+      </div>
+    </div>
+
+    <!-- Exercise 4.2:  Create a four-column layout (col-sm-3) with equal width. -->
+    <h3 class="mt-5">Four Column Layout</h3>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="box">Column 1</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">Column 2</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">Column 3</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">Column 4</div>
+      </div>
+    </div>
+
+    <!-- Exercise 5.1: Use justify-content-center and align-items-center to center content inside a row. -->
+    <h3 class="mt-5">Centered Content</h3>
+    <div class="row justify-content-center align-items-center" style="height: 150px;">
+      <div class="col-6 text-center">
+        <div class="box">Centered Both Vertically and Horizontally</div>
+      </div>
+    </div>
+
+    <!-- Exercise 5.2: Reorder columns on different screen sizes using order-md-2, order-md-1.   Implemnt this on the code  -->
+    <h3 class="mt-5">Reordering Columns</h3>
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <div class="box">Column 1 (Shown Second on Medium+)</div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="box">Column 2 (Shown First on Medium+)</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Exercise 2.2:Modify your HTML to include Bootstrap's JavaScript plugins via bootstrap.bundle.min.js. -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

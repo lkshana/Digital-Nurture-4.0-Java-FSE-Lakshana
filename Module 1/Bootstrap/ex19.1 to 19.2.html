@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Utilities Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Bootstrap Demo Page</h1>
+    <p>Exploring Utilities & Components</p>
+  </header>
+
+  <!-- Badge over Image -->
+  <div class="container my-5 text-center">
+    <div class="position-relative d-inline-block">
+      <img src="https://via.placeholder.com/150" class="img-fluid" alt="Image with badge">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        New
+      </span>
+    </div>
+  </div>
+
+  <!-- Icon-only Buttons -->
+  <div class="text-center my-4">
+    <button class="btn btn-primary me-2"><i class="bi bi-house"></i></button>
+    <button class="btn btn-success me-2"><i class="bi bi-check-circle"></i></button>
+    <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+  </div>
+
+  <!-- Modal Trigger -->
+  <div class="text-center my-4">
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch Modal
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Example Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          This is the content of the modal.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion container my-5" id="exampleAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Content for the first accordion item.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Content for the second accordion item.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Social Icons -->
+  <footer class="bg-light text-center py-4">
+    <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-3"></i></a>
+    <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-3"></i></a>
+    <a href="#" class="text-dark me-3"><i class="bi bi-instagram fs-3"></i></a>
+  </footer>
+
+  <!-- Fixed Footer -->
+  <footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 w-100">
+    Fixed Footer Content
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
